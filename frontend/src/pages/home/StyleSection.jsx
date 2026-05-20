@@ -52,13 +52,13 @@ const StyleSection = () => {
                   {card.title}
                 </h4>
                 <div>
-                  <a 
-                    href="/shop" 
+                  <Link
+                    to={`/shop`}
                     className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest text-white uppercase border-b-2 border-primary pb-1 hover:border-white transition-colors"
                   >
                     <span>Discover More</span>
                     <i className="ri-arrow-right-up-line"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
