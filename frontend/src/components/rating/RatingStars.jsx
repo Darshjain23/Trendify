@@ -1,4 +1,4 @@
-const RatingStars = ({ rating }: any) => {
+const RatingStars = ({ rating }) => {
   const stars = [];
   for (let i = 1; i <= 5; i++) {
     stars.push(

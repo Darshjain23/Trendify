@@ -7,9 +7,9 @@ const OrderSummary = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { tax, taxRate, totalPrice, grandTotal, selectedItems, products } = useSelector(
-    (store: any) => store.cart
+    (store) => store.cart
   );
-  const { user } = useSelector((store: any) => store.auth);
+  const { user } = useSelector((store) => store.auth);
 
   const [createOrder, { isLoading }] = useCreateOrderMutation();
 
@@ -30,7 +30,7 @@ const OrderSummary = () => {
     }
 
     const orderPayload = {
-      products: products.map((item: any) => ({
+      products: products.map((item) => ({
         productId: item._id,
         name: item.name,
         price: item.price,
@@ -87,7 +87,7 @@ const OrderSummary = () => {
       {/* Actions */}
       <div className="pt-2 grid grid-cols-2 gap-3.5">
         <button
-          onClick={(e: any) => {
+          onClick={(e) => {
             e.stopPropagation();
             handleClearCart();
           }}

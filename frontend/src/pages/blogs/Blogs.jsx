@@ -16,7 +16,7 @@ const Blogs = () => {
 
       {/* Grid of Blog posts */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {blogsData?.map((blog: any, index: any) => (
+        {blogsData?.map((blog, index) => (
           <div
             key={index}
             className="group flex flex-col bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer"
